@@ -1,0 +1,44 @@
+@use './variables';
+@import './variables';
+
+.container_section {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 60px;
+}
+
+.container_section2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: justify;
+    margin: 60px;
+}
+
+.image_intro{
+    @include tamanio(250vh,350px);
+    max-width: 100%;
+    margin: 20px;
+}
+
+.image_intro2{
+    @include tamanio(350vh,550px);
+    max-width: 100%;
+    margin: 20px;
+}
+
+.video2{
+    @include tamanio(300vh,450px);
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.intro_text{
+    background-color: $background_story;
+    @include tamanio(50vw,250px);
+    padding: 10px;
+    border-radius: 10px;
+}

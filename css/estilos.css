@@ -1,0 +1,316 @@
+/* RESET DE MARGENES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FIN DE RESET DE MARGENES */
+
+
+/* ESTILO Y COLOR DE TEXTO */
+h1, h2, h3, article, div, section, fieldset {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
+/* FIN DE ESTILO Y COLOR DE TEXTO */
+
+
+body {
+  background-color: #000000;
+}
+
+
+/* CONFIGURACION TITULOS Y SUBTITULOS */
+#title {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background-image: url(../images/Gotham\ City\ Edit.jpg);
+  background-position: center;
+  height: 110px;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h3 {
+  color: whitesmoke;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 30px;
+}
+/* FIN CONFIGURACION TITULOS Y SUBTITULOS */
+
+
+/*CENTRADO DE NAVEGADOR*/
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 18vw;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 10px;
+}
+/* FIN CENTRADO DE NAVEGADOR */
+
+
+#bienvenida {
+  text-align: center;
+}
+
+article p {
+  margin: 30px;
+}
+
+/* PIE DE PAGINA */
+footer {
+  text-align: center;
+  background-color: rgb(168, 175, 180);
+  width: 100vw;
+  max-width: 100%;
+  margin-top: 75px;
+  padding: 5px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  margin: 3.5px;
+}
+
+a {
+  color: rgb(17, 70, 119);
+  text-decoration: none;
+}
+/* FIN PIE DE PAGINA */
+
+
+.container_section {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  margin: 60px;
+}
+
+.container_section2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: justify;
+  margin: 60px;
+}
+
+/*INTRODUCCION*/
+.image_intro {
+  width: 250vh;
+  height: 350px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.image_intro2 {
+  width: 350vh;
+  height: 550px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.video2 {
+  width: 300vh;
+  height: 450px;
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.intro_text {
+  background-color: rgb(17, 17, 107);
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*FIN INTRODUCCION*/
+
+
+/* DISTRIBUCION PERSONAJES */
+.name {
+  grid-area: name;
+  text-decoration: underline gray;
+}
+
+.story {
+  grid-area: story;
+  background-color: rgb(17, 17, 107);
+  width: 50vw;
+  height: 250px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.photo {
+  grid-area: photo;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.character_container {
+  display: grid;
+  width: 100vw;
+  height: 300px;
+  max-width: 100%;
+  margin-bottom: 100vh;
+  grid-template-areas: "name name" "story photo" "story photo";
+}
+
+.character_container2 {
+  display: grid;
+  width: 100vw;
+  height: 300px;
+  max-width: 100%;
+  margin-bottom: 100vh;
+  grid-template-areas: "name name" "photo story" "photo story";
+}
+/* FIN DISTRIBUCION PERSONAJES */
+
+
+/* CAROUSEL */
+.gadget {
+  /* SUBRAYADO DE TITULOS DE LAS HERRAMIENTAS */
+  text-decoration: underline gray;
+}
+
+.carousel_container {
+  display: grid;
+  height: 600px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-end;
+}
+
+.d-block {
+  /* IMAGENES DEL CAROUSEL */
+  width: 400px;
+  height: 400px;
+}
+/* FIN DE CAROUSEL */
+
+
+/* FORMULARIO */
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+}
+
+input,
+select {
+  margin: 5px;
+}
+
+#formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+/* FIN DE FORMULARIO */
+
+/*ANIMACIONES*/
+/* BARRA NAVEGACION */
+.nav-item a{
+  transition: all 0.5s;
+}
+.nav-item a:hover{
+  transform: scale(1.3);
+  background-color: rgb(171, 228, 245);
+}
+
+/* FOOTER */
+footer ul li a{
+  transition: all 0.5s;
+}
+footer ul li a:hover{
+  transform: scale(1.1);
+  background-color: rgb(171, 228, 245);
+}
+/* FIN ANIMACIONES */
+
+
+/* RESPONSIVIDAD */
+@media screen and (max-width: 768px) {
+  .container_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+  }
+  .container_section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+  }
+  /* ALIADOS Y VILLANOS */
+  .character_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .character_container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .story {
+    height: auto;
+    width: 80vw;
+  }
+  /* FIN ALIADOS Y VILLANOS */
+  .carousel_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  .d-block {
+    /* IMAGENES DEL CAROUSEL */
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+  }
+  /* PIE DE PAGINA */
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 3.5px;
+  }
+  /* FIN PIE DE PAGINA */
+}
+/*FIN RESPONSIVIDAD*/
+
+/*# sourceMappingURL=estilos.css.map */

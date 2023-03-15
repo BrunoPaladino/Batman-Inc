@@ -1,0 +1,18 @@
+/*VARIABLES*/
+$font_texto: "Roboto",sans-serif;
+$color_texto: whitesmoke;
+$background_story: rgb(17, 17, 107);
+$color_footer: rgb(168, 175, 180);
+$color_redes: rgb(17, 70, 119);
+/*FIN DE VARIABLES*/
+
+/*FUNCIONES*/
+@mixin tamanio_fuente($font-size){
+    font-size: $font-size;
+}
+
+@mixin tamanio ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+/*FIN DE FUNCIONES*/

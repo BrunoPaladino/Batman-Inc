@@ -1,0 +1,23 @@
+@use './variables';
+@import './variables';
+
+/* FORMULARIO */
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tamanio(300px,150px);
+}
+
+input,
+select {
+    margin: 5px;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+/* FIN DE FORMULARIO */

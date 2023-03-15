@@ -1,0 +1,46 @@
+@use './variables';
+@import './variables';
+
+/* DISTRIBUCION PERSONAJES */
+.name {
+    grid-area: name;
+    text-decoration: underline gray;
+
+}
+
+.story {
+    grid-area: story;
+    background-color: variables.$background_story;
+    @include tamanio(50vw,250px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photo {
+    grid-area: photo;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.character_container {
+    display: grid;
+    @include tamanio(100vw,300px);
+    max-width: 100%;
+    margin-bottom: 100vh;
+    grid-template-areas:
+        "name name"
+        "story photo"
+        "story photo"
+}
+
+.character_container2 {
+    display: grid;
+    @include tamanio(100vw,300px);
+    max-width: 100%;
+    margin-bottom: 100vh;
+    grid-template-areas:
+        "name name"
+        "photo story"
+        "photo story"
+}
+/* FIN DISTRIBUCION PERSONAJES */
