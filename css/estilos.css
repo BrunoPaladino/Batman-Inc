@@ -153,9 +153,10 @@ a {
   grid-area: story;
   background-color: rgb(17, 17, 107);
   width: 50vw;
-  height: 250px;
-  padding: 10px;
+  height: auto;
+  padding: 5px;
   border-radius: 10px;
+  margin: 5px;
 }
 
 .photo {
@@ -171,6 +172,7 @@ a {
   max-width: 100%;
   margin-bottom: 100vh;
   grid-template-areas: "name name" "story photo" "story photo";
+  align-items: center;
 }
 
 .character_container2 {
@@ -180,6 +182,7 @@ a {
   max-width: 100%;
   margin-bottom: 100vh;
   grid-template-areas: "name name" "photo story" "photo story";
+  align-items: center;
 }
 /* FIN DISTRIBUCION PERSONAJES */
 
@@ -235,8 +238,6 @@ a {
   margin: 50px;
   padding: 10px;
 }
-
-
 /* FIN INTRO QUIENES SOMOS */
 
 /* FORMULARIO */
