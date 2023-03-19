@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> /*AOS, pagina animaciones*/
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS, pagina animaciones -->
 
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -66,7 +66,7 @@
     </header>
 
     <main>
-        <div>
+        <div class="presentation_container">
             <p>Somos un sitio web dedicado a informar acerca de las novedades del caballero oscuro, tanto en sus
                 apariciones cinematograficas como impresas. Con el fin de que todos sus seguidores puedan encontrarse
                 actualizados acerca de las novedades de este interesante personaje, el cual a pesar del paso de los años
@@ -74,7 +74,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="presentation_container2">
             <p>
                 En caso de desear formar parte de nuestra comunidad y recibir informacion acerca de las novedades de
                 Batman,
@@ -83,23 +83,28 @@
         </div>
 
         <div id="formulario">
-            <fieldset>
-                <form action="">
+            <form action="">
+                <fieldset>
+                    <legend>Nuevo Usuario</legend>
                     <label for="email">email:</label>
                     <input type="email" name="email" placeholder="email" id="email" required>
                     <br>
                     <label for="password">Password:</label>
                     <input type="password" name="password" placeholder="password" id="password" required>
                     <br>
+                    <label for="genero">Genero:</label>
                     <select name="genero" id="genero">
                         <option value="M">Masculino</option>
                         <option value="F">Femenino</option>
                         <option value="Sin definir">Prefiero no decirlo</option>
                     </select>
                     <br>
-                    <input type="submit" value="Subscribirse">
-                </form>
-            </fieldset>
+                    <div>
+                        <input type="submit" value="Subscribirse">
+                        <input type="reset" value="Eliminar">
+                    </div>
+                </fieldset>
+            </form>
         </div>
 
 
