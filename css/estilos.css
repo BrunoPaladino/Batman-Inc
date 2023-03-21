@@ -112,17 +112,18 @@ a {
 
 /*INTRODUCCION*/
 .image_intro {
-  width: 250vh;
-  height: 350px;
+/*   width: 250vh;
+  height: 350px; */
   max-width: 100%;
   margin: 20px;
 }
 
 .image_intro2 {
-  width: 350vh;
-  height: 550px;
+/*   width: 350vh;
+  height: 550px; */
   max-width: 100%;
   margin: 20px;
+  border-radius: 25px;
 }
 
 .video2 {
@@ -135,10 +136,26 @@ a {
 
 .intro_text {
   background-color: rgb(17, 17, 107);
-  width: auto;
+  width: 400px;
+  max-width: 100%;
   height: auto;
   padding: 10px;
   border-radius: 10px;
+  text-align: justify;
+}
+
+.intro_section{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+  align-items: center;
+}
+
+#video_container{
+  display: flex;
+  width: 400px;
+  max-width: 100%;
+
 }
 /*FIN INTRODUCCION*/
 
@@ -210,20 +227,22 @@ a {
 
 /* INTRO QUIENES SOMOS */
 .presentation_container{
+  display: flex;
   justify-content: center;
   border-style: outset;
   border-color: rgb(139, 130, 130);
   height: auto;
-  width: 90vw;
+  width: auto;
   max-width: 100%;
   margin: 50px;
   padding: 10px;
 }
 
 .presentation_container2{
+  display: flex;
   justify-content: center;
   height: auto;
-  width: 90vw;
+  width: auto;
   max-width: 100%;
   margin: 50px;
   padding: 10px;
@@ -267,9 +286,20 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
+}
+/* FIN DE FORMULARIO */
+
+.image_notif{
+  border-radius: 600px;
+  height: 300px;
+  width: 300px;
 }
 
-/* FIN DE FORMULARIO */
+.notif_container{
+  display: flex;
+  justify-content: center;
+}
 
 /*ANIMACIONES*/
 /* BARRA NAVEGACION */
@@ -289,6 +319,7 @@ footer ul li a{
 footer ul li a:hover{
   transform: scale(1.1);
   background-color: rgb(171, 228, 245);
+  color: black;
   border-radius: 8px;
 }
 /* FIN ANIMACIONES */
@@ -296,18 +327,26 @@ footer ul li a:hover{
 
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
+
   .container_section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
   }
+  
   .container_section2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
   }
+
+  .intro_section{
+    display: flex;
+    flex-direction: column;
+  }
+
   /* ALIADOS Y VILLANOS */
   .character_container {
     display: flex;
