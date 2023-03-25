@@ -132,7 +132,7 @@ a {
 
 .intro_text {
   background-color: rgb(17, 17, 107);
-  width: 400px;
+  width: auto;
   max-width: 100%;
   height: auto;
   padding: 10px;
@@ -338,6 +338,7 @@ footer ul li a:hover{
   .intro_section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   /* ALIADOS Y VILLANOS */
