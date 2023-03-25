@@ -12,6 +12,11 @@ h1, h2, h3, article, div, section, fieldset {
   font-family: "Roboto", sans-serif;
   color: whitesmoke;
 }
+
+h3{
+  margin: 40px;
+}
+
 /* FIN DE ESTILO Y COLOR DE TEXTO */
 
 
@@ -132,7 +137,17 @@ a {
 
 .intro_text {
   background-color: rgb(17, 17, 107);
-  width: auto;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.intro_text2{
+  background-color: rgb(17, 17, 107);
+  width: 500px;
   max-width: 100%;
   height: auto;
   padding: 10px;
@@ -150,6 +165,7 @@ a {
 
 #video_container{
   display: flex;
+  justify-content: center;
   width: 400px;
   max-width: 100%;
 
@@ -334,12 +350,23 @@ footer ul li a:hover{
     margin: 10vh;
   }
   
-
+/* INTRODUCCION */
   .intro_section{
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  .intro_text{
+    width: auto;
+    max-width: 100%;
+  }
+
+  .intro_text2{
+    width: auto;
+    max-width: 100%;
+  }
+/* FIN INTRODUCCION */
 
   /* ALIADOS Y VILLANOS */
   .character_container {
